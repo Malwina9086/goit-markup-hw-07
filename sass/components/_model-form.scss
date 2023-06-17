@@ -1,0 +1,219 @@
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+@keyframes windowmodel {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.close {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.model-form_legend {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.model-form_label {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
+
+  &_span {
+    margin-bottom: 4px;
+  }
+
+  &_div {
+    position: relative;
+  }
+
+  &_icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &_input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    outline-color: transparent;
+    height: 40px;
+    outline: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 42px;
+  }
+
+  &_comment {
+    outline: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__textarea--input {
+    resize: none;
+    padding: 11px 16px;
+    width: 100%;
+    height: 120px;
+    border: none;
+    outline-color: transparent;
+
+    &placeholder {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  .label-form:focus-within .form-input,
+  .label-form:focus-within .comment-div {
+    outline-color: #2196f3;
+  }
+
+  .label-form:focus-within .form-icon {
+    fill: #2196f3;
+  }
+
+  &_regulations--label {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+  }
+
+  &_checkbox {
+    position: relative;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    top: 20px;
+    width: 16px;
+    height: 15px;
+  }
+
+  &_tick--svg {
+    position: relative;
+    fill: #fff;
+    background-color: #2196f3;
+    left: -16px;
+    bottom: 2px;
+    width: 16px;
+    height: 17px;
+    border-radius: 4px;
+    visibility: hidden;
+  }
+
+  .form-checkbox:checked ~ .tick-svg {
+    visibility: visible;
+  }
+  .form-checkbox:checked + .square-svg {
+    visibility: hidden;
+  }
+
+  &_regulations--span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+
+  &_regulations {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &hover {
+      color: #2196f3;
+    }
+
+    &focus {
+      color: #2196f3;
+    }
+
+    &visited {
+      color: #2196f3;
+    }
+  }
+
+  &_button {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: #2196f3;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}

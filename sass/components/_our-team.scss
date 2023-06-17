@@ -1,0 +1,95 @@
+.our-team {
+  background: #f5f4fa;
+
+  &section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &_h2 {
+    color: #212121;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+
+  &_block {
+    display: flex;
+    gap: 30px;
+  }
+
+  &_frame {
+    width: 270px;
+    background: #ffffff;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &_under--photo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &_name {
+    color: #212121;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &_work--position {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+  }
+
+  &_social--media {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &_media--icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &hover {
+      background-color: #2196f3;
+      color: #fff;
+    }
+
+    &focus {
+      background-color: #2196f3;
+      color: #fff;
+    }
+  }
+
+  &_icon {
+    fill: currentColor;
+  }
+}

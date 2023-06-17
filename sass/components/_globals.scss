@@ -6,15 +6,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-*::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 58px;
-  height: 4px;
-  background-color: #2196f3;
-}
-
 h1,
 h2,
 h3,
@@ -63,4 +54,8 @@ nav {
 
 .current {
   color: #2196f3;
+}
+footer {
+  background: #2f303a;
+  padding: 60px 0;
 }
