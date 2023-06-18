@@ -1,13 +1,12 @@
-@import "./utils/vars";
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 .our-clients {
   padding: 94px 0;
 
-  &container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
   &_h2 {
     font-family: Roboto;
     font-size: 36px;
@@ -31,16 +30,13 @@
     align-items: center;
     border: 1px solid currentColor;
     border-radius: 4px;
-    color: rgba(175, 177, 184, 1);
+    color: #afb168;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &hover {
-      color: #2196f3;
-    }
-
-    &focus {
-      color: #2196f3;
-    }
+  &_div:hover,
+  &_div:focus {
+    color: #2196f3;
   }
 
   &_icon {

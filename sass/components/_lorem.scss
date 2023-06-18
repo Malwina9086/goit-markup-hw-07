@@ -1,15 +1,13 @@
-@import "./utils/vars";
-
 .lorem {
   display: flex;
   gap: 30px;
 
-  &section {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  &container {
+  .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
