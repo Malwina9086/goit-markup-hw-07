@@ -1,18 +1,8 @@
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .our-job {
   display: flex;
   gap: 30px;
 
-  .work {
-    padding-top: 0;
-  }
-
-  &_h2 {
+  &__h2 {
     color: #212121;
     font-size: 36px;
     line-height: 1.2;

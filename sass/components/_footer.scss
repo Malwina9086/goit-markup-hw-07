@@ -1,19 +1,8 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .footer-page {
   display: flex;
   align-items: baseline;
 
-  &_logo {
+  &__logo {
     color: #2196f3;
     font-family: Raleway;
     font-size: 26px;
@@ -21,19 +10,19 @@
     font-weight: 700;
     letter-spacing: 0.03em;
   }
-  &_studio {
+  &__studio {
     color: #fff;
   }
 
-  &_address {
+  &__address {
     margin-top: 20px;
   }
 
-  &_between:not(:last-child) {
+  &__between:not(:last-child) {
     margin-bottom: 9px;
   }
 
-  &_link {
+  &__link {
     color: #ffffff;
     font-size: 14px;
     line-height: 1.7;
@@ -42,12 +31,12 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &_link:hover,
-  &_link:focus {
+  &__link:hover,
+  &__link:focus {
     color: #2196f3;
   }
 
-  &_contact {
+  &__contact {
     color: #757575;
     font-size: 14px;
     line-height: 1.7;
@@ -56,15 +45,15 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &_contact:hover,
-  &_contact:focus {
+  &__contact:hover,
+  &__contact:focus {
     color: #2196f3;
   }
 
   .join {
     margin-left: 70px;
 
-    &_paragraph {
+    &__paragraph {
       display: flex;
       color: #ffffff;
       font-size: 14px;
@@ -73,14 +62,14 @@
       letter-spacing: 0.03em;
     }
 
-    &_media {
+    &__media {
       justify-content: center;
       display: flex;
       gap: 10px;
       margin-top: 20px;
     }
 
-    &_item {
+    &__item {
       display: flex;
       background-color: rgba(255, 255, 255, 0.1);
       fill: #fff;
@@ -90,12 +79,12 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &_item:hover,
-    &_item:focus {
+    &__item:hover,
+    &__item:focus {
       background-color: #2196f3;
     }
 
-    &_icon {
+    &__icon {
       fill: #ffffff;
       margin: 12px;
     }
@@ -104,7 +93,7 @@
   .newsletter {
     margin-left: 78px;
 
-    &_label {
+    &__label {
       display: flex;
       font-family: "Roboto";
       font-style: normal;
@@ -117,12 +106,12 @@
       margin-bottom: 20px;
     }
 
-    &_block {
+    &__block {
       display: flex;
       gap: 12px;
     }
 
-    &_input {
+    &__input {
       width: 358px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -133,11 +122,11 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &_input:focus {
+    &__input:focus {
       background-color: #ffffff;
     }
 
-    &_button {
+    &__button {
       position: relative;
       width: 200px;
       height: 50px;
@@ -157,7 +146,7 @@
       cursor: pointer;
     }
 
-    &_icon {
+    &__icon {
       position: relative;
       top: 5px;
       left: 16px;

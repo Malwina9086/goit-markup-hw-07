@@ -15,7 +15,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
+.modal-window {
   width: 528px;
   height: 581px;
   background: #ffffff;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.model-form_legend {
+.legend {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
@@ -62,30 +62,29 @@
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+.model {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
 
-  &_label {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: #757575;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 10px;
-  }
-
-  &_span {
+  &__span {
     margin-bottom: 4px;
   }
 
-  &_div {
+  &__div {
     position: relative;
   }
 
-  &_icon {
+  &__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -94,7 +93,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &_input {
+  &__input {
     width: 100%;
     height: 20px;
     border: none;
@@ -106,13 +105,13 @@
     padding-left: 42px;
   }
 
-  &_comment {
+  &__comment {
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &--input {
+  &__textarea {
     resize: none;
     padding: 11px 16px;
     width: 100%;
@@ -129,22 +128,21 @@
     }
   }
 
-  &_label:focus-within &_input,
-  &_label:focus-within &_comment {
+  .model:focus-within &__input,
+  .model:focus-within &__comment {
     outline-color: #2196f3;
   }
 
-  &_label:focus-within &_icon {
+  .model:focus-within &__icon {
     fill: #2196f3;
   }
 
-  &--label {
+  .regulations {
     display: flex;
     align-items: center;
     margin-top: 19px;
   }
-
-  &_checkbox {
+  &__checkbox {
     position: relative;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -152,9 +150,20 @@
     top: 20px;
     width: 16px;
     height: 15px;
+    &:checked ~ .regulations__square {
+      visibility: visible;
+    }
+    &:checked ~ .regulations__tick {
+      visibility: hidden;
+    }
   }
 
-  &--svg {
+  &__square {
+    position: relative;
+    left: 54px;
+  }
+
+  &__tick {
     position: relative;
     fill: #fff;
     background-color: #2196f3;
@@ -166,15 +175,7 @@
     visibility: hidden;
   }
 
-  &_checkbox:checked ~ .tick-svg {
-    visibility: visible;
-  }
-
-  &_checkbox:checked + .square-svg {
-    visibility: hidden;
-  }
-
-  &--span {
+  &__span {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -184,17 +185,17 @@
     color: #757575;
   }
 
-  &_regulations {
+  &__form {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &_regulations:hover,
-  &_regulations:focus,
-  &_regulations:visited {
+  &__form:hover,
+  &__form:focus,
+  &__form:visited {
     color: #2196f3;
   }
 
-  &_button {
+  &__button {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
